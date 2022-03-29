@@ -84,8 +84,8 @@ struct ProfileView: View {
                 Spacer()
             }
         }
-        
-        .navigationBarHidden(true)
+        .navigationBarBackButtonHidden(true)
+        //.navigationBarHidden(true)
         
         //                    .navigationViewStyle(StackNavigationViewStyle())
         .fullScreenCover(isPresented: $shouldShowImagePicker, onDismiss: nil) {

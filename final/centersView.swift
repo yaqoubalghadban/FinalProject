@@ -27,8 +27,8 @@ struct centersView: View {
                
             }
     }
-}
-        .navigationBarHidden(true)
+}        .navigationBarBackButtonHidden(true)
+        //.navigationBarHidden(true)
 }
 }
 struct centersView_Previews: PreviewProvider {
