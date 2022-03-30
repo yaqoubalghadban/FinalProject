@@ -8,37 +8,34 @@
 import SwiftUI
 
 struct centersView: View {
-    var centers = [
-      "KCD" , "octopus"
+    var clubes = [
+        centers(centerName: "KCD") , centers(centerName: "octopus")
          ]
+    
     var body: some View {
         ZStack {
           Color("back")
                 .edgesIgnoringSafeArea(.all)
-                ScrollView( showsIndicators: false){
-            VStack {
-                Text("Centers")
-                    .font(.largeTitle)
-                    .fontWeight(.medium)
-                    .foregroundColor(Color(hue: 0.603, saturation: 0.806, brightness: 0.443))
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .padding()
-                Image("logo1")
-                    .resizable()
-                    .frame(width: 200, height: 200)
-                List(centers, id:\.self){center in
+              
+            List(clubes, id:\.id){ club in
+                Section(header: Text("centers")){
+                HStack{
+                    Image(club.centerName)
+                        .resizable()
                     
-                    HStack{
-                        Image("KCD")
-                            .resizable()
-                            .frame(width: 50, height: 50)
-                        Text("KCD")
-                    }
-                }
+                        .frame(width: 120, height: 120)
+                        .scaledToFit()
+                        .clipShape(Circle())
+                       
+                    Text (club.centerName)
+                }.listRowBackground(Color("back"))}
+            }.listStyle(.plain)
+            
+            
                 
                
-            }
-    }
+            
+    
 }        .navigationBarBackButtonHidden(true)
         //.navigationBarHidden(true)
 }
