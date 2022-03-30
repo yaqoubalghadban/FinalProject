@@ -22,6 +22,8 @@ struct ContentView: View {
                     Text("Welcome to the sea")
                         .font(.title)
                         .fontWeight(.thin)
+                        .padding(.top)
+                        
                     Image("logo1")
                         .resizable()
                         .frame(width: 200, height: 200)
