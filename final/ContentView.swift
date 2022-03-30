@@ -22,7 +22,7 @@ struct ContentView: View {
                     Text("Welcome to the sea")
                         .font(.title)
                         .fontWeight(.thin)
-                        .padding(.top)
+                        .padding(.top , 20)
                         
                     Image("logo1")
                         .resizable()
@@ -68,7 +68,7 @@ struct ContentView: View {
                         .background(Color(hue: 0.603, saturation: 0.806, brightness: 0.443))
                         .cornerRadius(8)
                     Spacer()
-                        .padding(50)
+                        .padding(10)
                     
                     
                     
@@ -84,7 +84,7 @@ struct ContentView: View {
                         .padding(.horizontal,20)
                         .background(Color(hue: 0.603, saturation: 0.806, brightness: 0.443))
                         .cornerRadius(8)
-                    //   }
+                       
                     
                 }//vstavh
                 .padding()

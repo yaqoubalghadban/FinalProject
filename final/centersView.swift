@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct centersView: View {
+    var centers = [
+      "KCD" , "octopus"
+         ]
     var body: some View {
         ZStack {
           Color("back")
@@ -23,6 +26,15 @@ struct centersView: View {
                 Image("logo1")
                     .resizable()
                     .frame(width: 200, height: 200)
+                List(centers, id:\.self){center in
+                    
+                    HStack{
+                        Image("KCD")
+                            .resizable()
+                            .frame(width: 50, height: 50)
+                        Text("KCD")
+                    }
+                }
                 
                
             }
