@@ -7,8 +7,17 @@
 
 import Foundation
 
-struct centers:Identifiable{
+struct Centers:Identifiable{
     var id = UUID()
-    var centerName : String
-    
+    var name : String
+    var courses:[Course]
+       
+        
+       
+}
+struct Course : Identifiable {
+    var id = UUID()
+    var name : String
+    var price : Double
+    var images: String
 }

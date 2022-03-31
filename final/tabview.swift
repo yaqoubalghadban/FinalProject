@@ -32,5 +32,6 @@ struct tabview: View {
 struct tabview_Previews: PreviewProvider {
     static var previews: some View {
         tabview(username: "yaqoub")
+            .preferredColorScheme(.dark)
     }
 }
