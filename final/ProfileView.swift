@@ -15,7 +15,7 @@ struct ProfileView: View {
     var body: some View {
         ZStack {
             Color("back")
-                .edgesIgnoringSafeArea(.all)
+                .edgesIgnoringSafeArea(.top)
             VStack{
                 Text("Profile")
                     .font(.largeTitle)
@@ -90,7 +90,7 @@ struct ProfileView: View {
         //                    .navigationViewStyle(StackNavigationViewStyle())
         .fullScreenCover(isPresented: $shouldShowImagePicker, onDismiss: nil) {
             ImagePicker(image: $image)
-                .ignoresSafeArea()
+                
         }
     }
 }

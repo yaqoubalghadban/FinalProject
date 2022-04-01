@@ -18,7 +18,7 @@ struct centersView: View {
         
         ZStack {
             Color("back")
-                .ignoresSafeArea(.all)
+                .edgesIgnoringSafeArea(.top)
             VStack {
                 Image("logo1")
                     .resizable()
