@@ -9,12 +9,22 @@ import SwiftUI
 
 struct cartviwe: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            Color("back")
+                .edgesIgnoringSafeArea(.all)
+            VStack {
+                Text("cart")
+                    .font(.title)
+                    .fontWeight(.black)
+                    .foregroundColor(Color(hue: 0.603, saturation: 0.806, brightness: 0.443))
+            }
+        }
     }
 }
 
 struct cartviwe_Previews: PreviewProvider {
     static var previews: some View {
         cartviwe()
+            .preferredColorScheme(.dark)
     }
 }

@@ -21,3 +21,4 @@ struct Course : Identifiable {
     var price : Double
     var images: String
 }
+var MyCart :[Course] = []

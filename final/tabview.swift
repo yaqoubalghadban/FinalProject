@@ -9,27 +9,13 @@ import SwiftUI
 
 struct tabview: View {
     var username : String
-    
+
     var body: some View {
         TabView {
             
-            ZStack {
-                
-                VisualEffectView(effect: UIBlurEffect(style: .systemChromeMaterialDark))
-                centersView()
-            }
-                        .tabItem {
-                            Label("cart", systemImage: "cart.fill")
-                    }
+
             
-            ZStack {
-                VisualEffectView(effect: UIBlurEffect(style: .systemChromeMaterialDark))
-                ProfileView(username: username)
-            }
-          
-                    .tabItem {
-                        Label("Profile", systemImage: "person.fill")
-                    }
+            
             ZStack {
                 VisualEffectView(effect: UIBlurEffect(style: .systemChromeMaterialDark))
                 centersView()
@@ -39,6 +25,28 @@ struct tabview: View {
                     }
             
             
+            
+            ZStack {
+
+                VisualEffectView(effect: UIBlurEffect(style: .systemChromeMaterialDark))
+                cartviwe()
+            }
+                        .tabItem {
+                            Label("cart", systemImage: "bag.fill")
+                        }
+                        
+            
+            
+            
+            ZStack {
+                            VisualEffectView(effect: UIBlurEffect(style: .systemChromeMaterialDark))
+                            ProfileView(username: username)
+                        }
+
+                                .tabItem {
+                                    Label("Profile", systemImage: "person.fill")
+                                }
+
             
             }
         .navigationBarHidden(true)
