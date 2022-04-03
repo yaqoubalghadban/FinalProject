@@ -47,14 +47,14 @@ struct CentersDetails: View {
                                 .padding()
                             
                         })
-                        
+                            
                             
                         }
                 .listRowBackground(Color("back")) .padding(.bottom)
-
+                
                
                 }.listStyle(.plain)
-                .environmentObject(cartEvn())
+              
         }
         }
     }
