@@ -53,8 +53,9 @@ struct centersView: View {
                 }.listStyle(.plain)
                 
             }//.offset(y:-50)
-        }.navigationBarBackButtonHidden(true)
-            .navigationBarHidden(true)
+        }.navigationBarTitle("", displayMode: .inline)
+            .navigationBarBackButtonHidden(true)
+             .navigationBarHidden(true)
     }
 }
 

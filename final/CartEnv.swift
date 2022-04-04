@@ -12,6 +12,8 @@ class CartEnv : ObservableObject{
     func addItem(Course : Course){
         cartItems.append(Course)
     }
-    
+    func removeItem (at indexSet: IndexSet){
+        cartItems.remove(atOffsets: indexSet)
+    }
 }
 

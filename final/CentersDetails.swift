@@ -32,9 +32,11 @@ struct CentersDetails: View {
                                 .clipShape(Circle())
                                 
                         
+                        VStack {
                             Text (i.name)
-                        Text("\(i.price.formatted())")
-                            
+                                .padding(10)
+                        Text("\(i.price.formatted())KD")
+                        }
                         
                         Button(action: {
                             cartEvn.addItem(Course: Course(name: i.name, price: i.price, images: i.images))

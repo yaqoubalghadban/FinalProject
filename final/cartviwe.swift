@@ -20,13 +20,20 @@ struct cartviwe: View {
                     .font(.title)
                     .fontWeight(.black)
                     .foregroundColor(Color(hue: 0.603, saturation: 0.806, brightness: 0.443))
-                List(cartEvn.cartItems){
-           i in
+                List{
+                    ForEach(cartEvn.cartItems){
+                        i in
                     Text(i.name)
                     Image(i.images)
+                        .resizable()
+                        .frame(width: 350, height: 250)
+                        .scaledToFit()
+                        .padding()
                    Text("\(i.price.formatted())KD")
+                    }
+                    .onDelete(perform: {IndexSet in cartEvn.removeItem(at: IndexSet)})
                 }.backgroundList(Color("back"))
-            }
+            }.padding()
             
         }
     }
