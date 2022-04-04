@@ -50,7 +50,7 @@ struct tabview: View {
             
             }
         .navigationBarHidden(true)
-       
+        
         
         
     }
@@ -71,6 +71,7 @@ struct tabview_Previews: PreviewProvider {
         
         tabview(username: "yaqoub")
             .preferredColorScheme(.dark)
+            .environmentObject(CartEnv())
     }
 }
 

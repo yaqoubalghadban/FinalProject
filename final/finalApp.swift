@@ -12,6 +12,7 @@ struct finalApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(CartEnv())
                 .onAppear {
                                         if #available(iOS 15.0, *) {
                                             let tabBarAppearance = UITabBarAppearance()

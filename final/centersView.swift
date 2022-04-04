@@ -52,8 +52,9 @@ struct centersView: View {
                     
                 }.listStyle(.plain)
                 
-            }//VSTACK
+            }//.offset(y:-50)
         }.navigationBarBackButtonHidden(true)
+            .navigationBarHidden(true)
     }
 }
 
@@ -61,5 +62,6 @@ struct centersView_Previews: PreviewProvider {
     static var previews: some View {
         centersView()
             .preferredColorScheme(.dark)
+            .environmentObject(CartEnv())
     }
 }

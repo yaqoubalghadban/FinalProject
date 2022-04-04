@@ -37,7 +37,7 @@ struct CentersDetails: View {
                             
                         
                         Button(action: {
-                            
+                            cartEvn.addItem(Course: Course(name: i.name, price: i.price, images: i.images))
                         }, label: {
                             Text("add")
                                 .foregroundColor(.white)
@@ -60,4 +60,11 @@ struct CentersDetails: View {
     }
 }
 
+struct CentersDetails_Previews: PreviewProvider {
+    static var previews: some View {
+        CentersDetails(club:Centers(name: "KCD", courses:[Course(name: "open weater", price: 145.0, images: "open water")]))
+            .preferredColorScheme(.dark)
+            .environmentObject(CartEnv())
+    }
+}
 

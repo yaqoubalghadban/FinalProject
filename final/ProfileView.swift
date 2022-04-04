@@ -149,7 +149,7 @@ struct ImagePicker: UIViewControllerRepresentable {
 
 
 // }
-// .navigationBarBackButtonHidden(true)
+ //.navigationBarBackButtonHidden(true)
 // }
 //}
 
