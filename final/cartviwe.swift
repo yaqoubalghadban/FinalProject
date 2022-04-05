@@ -10,7 +10,7 @@ import SwiftUI
 struct cartviwe: View {
     @EnvironmentObject var cartEvn: CartEnv
 
-    
+    @State var totalAmount = 0.0
     var body: some View {
         ZStack {
             Color("back")
@@ -33,10 +33,16 @@ struct cartviwe: View {
                                                 .scaledToFit()
                                                 .cornerRadius(15)
                                            Text("Course price: \(i.price.formatted())KD")
+                                .onAppear {
+                                    totalAmount += i.price
+                                    
+                                }
+                            
                                                 }
                     }
                     .onDelete(perform: {IndexSet in cartEvn.removeItem(at: IndexSet)})
                 }.backgroundList(Color("back"))
+          Text("\(totalAmount)")
             }
             
         }
