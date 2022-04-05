@@ -9,31 +9,35 @@ import SwiftUI
 
 struct cartviwe: View {
     @EnvironmentObject var cartEvn: CartEnv
+
     
-   
     var body: some View {
         ZStack {
             Color("back")
                 .edgesIgnoringSafeArea(.all)
             VStack {
                 Text("cart")
-                    .font(.title)
-                    .fontWeight(.black)
+                    .font(.largeTitle)
+                    .fontWeight(.regular)
                     .foregroundColor(Color(hue: 0.603, saturation: 0.806, brightness: 0.443))
+                   
+                    
                 List{
                     ForEach(cartEvn.cartItems){
                         i in
-                    Text(i.name)
-                    Image(i.images)
-                        .resizable()
-                        .frame(width: 350, height: 250)
-                        .scaledToFit()
-                        .padding()
-                   Text("\(i.price.formatted())KD")
+                        VStack(alignment: .leading){
+                                            Text(i.name)
+                                            Image(i.images)
+                                                .resizable()
+                                                .frame(width: 320, height: 230)
+                                                .scaledToFit()
+                                                .cornerRadius(15)
+                                           Text("Course price: \(i.price.formatted())KD")
+                                                }
                     }
                     .onDelete(perform: {IndexSet in cartEvn.removeItem(at: IndexSet)})
                 }.backgroundList(Color("back"))
-            }.padding()
+            }
             
         }
     }

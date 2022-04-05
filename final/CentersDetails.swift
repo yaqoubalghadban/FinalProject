@@ -37,18 +37,18 @@ struct CentersDetails: View {
                                 .padding(10)
                         Text("\(i.price.formatted())KD")
                         }
-                        
+                        Spacer()
                         Button(action: {
                             cartEvn.addItem(Course: Course(name: i.name, price: i.price, images: i.images))
                         }, label: {
-                            Text("add")
+                            Text("Add")
                                 .foregroundColor(.white)
-                                .frame(width: 50, height: 50)
+                                .frame(width: 70, height: 50)
                                 .background(Color(hue: 0.603, saturation: 0.806, brightness: 0.443))
                                 .cornerRadius(8)
-                                .padding()
+                                
                             
-                        })
+                        }).padding()
                             
                             
                         }

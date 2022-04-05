@@ -24,9 +24,9 @@ struct ProfileView: View {
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding()
                 Text(" \(username)")
-                    .font(.title3)
-                    .fontWeight(.medium)
-                
+                    .font(.title)
+                    .fontWeight(.regular)
+                    .foregroundColor(Color(hue: 0.603, saturation: 0.806, brightness: 0.443))
                 
                 VStack {
                     ZStack(alignment: .top) {
