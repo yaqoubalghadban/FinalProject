@@ -41,7 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DC5F7C8527EDFDEB0067E0AA /* final.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = final.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC5F7C8527EDFDEB0067E0AA /* Under Water.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Under Water.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC5F7C8827EDFDEB0067E0AA /* finalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = finalApp.swift; sourceTree = "<group>"; };
 		DC5F7C8A27EDFDEB0067E0AA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DC5F7C8C27EDFDEE0067E0AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -98,7 +98,7 @@
 		DC5F7C8627EDFDEB0067E0AA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DC5F7C8527EDFDEB0067E0AA /* final.app */,
+				DC5F7C8527EDFDEB0067E0AA /* Under Water.app */,
 				DC5F7C9527EDFDEF0067E0AA /* finalTests.xctest */,
 				DC5F7C9F27EDFDEF0067E0AA /* finalUITests.xctest */,
 			);
@@ -159,9 +159,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DC5F7C8427EDFDEB0067E0AA /* final */ = {
+		DC5F7C8427EDFDEB0067E0AA /* Under Water */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DC5F7CA927EDFDEF0067E0AA /* Build configuration list for PBXNativeTarget "final" */;
+			buildConfigurationList = DC5F7CA927EDFDEF0067E0AA /* Build configuration list for PBXNativeTarget "Under Water" */;
 			buildPhases = (
 				DC5F7C8127EDFDEB0067E0AA /* Sources */,
 				DC5F7C8227EDFDEB0067E0AA /* Frameworks */,
@@ -171,9 +171,9 @@
 			);
 			dependencies = (
 			);
-			name = final;
+			name = "Under Water";
 			productName = final;
-			productReference = DC5F7C8527EDFDEB0067E0AA /* final.app */;
+			productReference = DC5F7C8527EDFDEB0067E0AA /* Under Water.app */;
 			productType = "com.apple.product-type.application";
 		};
 		DC5F7C9427EDFDEF0067E0AA /* finalTests */ = {
@@ -248,7 +248,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DC5F7C8427EDFDEB0067E0AA /* final */,
+				DC5F7C8427EDFDEB0067E0AA /* Under Water */,
 				DC5F7C9427EDFDEF0067E0AA /* finalTests */,
 				DC5F7C9E27EDFDEF0067E0AA /* finalUITests */,
 			);
@@ -320,12 +320,12 @@
 /* Begin PBXTargetDependency section */
 		DC5F7C9727EDFDEF0067E0AA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DC5F7C8427EDFDEB0067E0AA /* final */;
+			target = DC5F7C8427EDFDEB0067E0AA /* Under Water */;
 			targetProxy = DC5F7C9627EDFDEF0067E0AA /* PBXContainerItemProxy */;
 		};
 		DC5F7CA127EDFDEF0067E0AA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DC5F7C8427EDFDEB0067E0AA /* final */;
+			target = DC5F7C8427EDFDEB0067E0AA /* Under Water */;
 			targetProxy = DC5F7CA027EDFDEF0067E0AA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -468,7 +468,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = yaqoub.com.final;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Under Water";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -496,7 +496,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = yaqoub.com.final;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Under Water";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -587,7 +587,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DC5F7CA927EDFDEF0067E0AA /* Build configuration list for PBXNativeTarget "final" */ = {
+		DC5F7CA927EDFDEF0067E0AA /* Build configuration list for PBXNativeTarget "Under Water" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DC5F7CAA27EDFDEF0067E0AA /* Debug */,
